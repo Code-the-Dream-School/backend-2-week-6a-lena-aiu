@@ -32,6 +32,7 @@ RSpec.configure do |config|
 		  url: "#{ENV['APPLICATION_URL']}"
 		  #url: "#{ENV['http://localhost:3000/api-docs']}"
 		  #url: "#{ENV['0.0.0.0']}"
+		  #url: 'https://localhost:3000'
           #}
         }
       ]
