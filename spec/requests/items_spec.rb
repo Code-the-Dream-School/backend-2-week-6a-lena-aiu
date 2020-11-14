@@ -133,6 +133,9 @@ RSpec.describe 'Items API' do
     get('list items') do
       tags 'Items'
       response(200, 'success') do
+		#need to add this two lines below
+		let!(:todo){create(:todo)}
+		let!(:items){create(:item, todo_id: todo.id)}
         run_test!
       end
     end
